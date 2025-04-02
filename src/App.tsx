@@ -31,7 +31,7 @@ const pokemonList: Pokemon[] = [
 ];
 
 function App() {
-  const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
 
   return (
     <div>
@@ -47,7 +47,6 @@ function App() {
           </button>
         ))}
       </nav>
-
 
       {selectedPokemon && <PokemonCard pokemon={selectedPokemon} />}
     </div>
