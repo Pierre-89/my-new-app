@@ -16,4 +16,12 @@ function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
   );
 }
 
+
+
+function displayPokemon(pokemon: { name: string }) {
+  console.log("Pokémon sélectionné :", pokemon.name);
+}
+
+export { displayPokemon };
+
 export default PokemonCard;
