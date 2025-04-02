@@ -3,7 +3,6 @@ import { useState } from "react";
 import PokemonCard from "./components/PokemonCard";
 import type { Pokemon } from "./components/PokemonCard";
 
-// Liste des Pokémon
 const pokemonList: Pokemon[] = [
   {
     name: "bulbasaur",
@@ -49,7 +48,7 @@ function App() {
         ))}
       </nav>
 
-      {/* Affichage dynamique */}
+
       {selectedPokemon && <PokemonCard pokemon={selectedPokemon} />}
     </div>
   );
